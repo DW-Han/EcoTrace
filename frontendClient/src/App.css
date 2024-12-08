@@ -4,20 +4,19 @@
   padding: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: height 0.3s ease; /* Smooth transition for height changes */
+  transition: height 0.3s ease;
 }
 
-/* Chart Wrapper */
 .chart-wrapper {
-  height: 250px; /* Fixed height for the chart container */
-  width: 100%; /* Full width of the container */
+  height: 250px;
+  width: 100%;
   margin-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f9f9f9; /* Optional background for visual consistency */
+  background-color: #f9f9f9;
   border-radius: 8px;
-  overflow: hidden; /* Prevent overflow issues */
+  overflow: hidden;
 }
 
 .summary {
@@ -26,18 +25,17 @@
   padding: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: height 0.3s ease; /* Smooth transition for height changes */
+  transition: height 0.3s ease;
 }
 
-/* Chart Wrapper */
 .chart-wrapper {
-  height: 250px; /* Fixed height for the chart container */
-  width: 100%; /* Full width of the container */
+  height: 250px;
+  width: 100%;
   margin-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f9f9f9; /* Optional background for visual consistency */
+  background-color: #f9f9f9;
   border-radius: 8px;
-  overflow: hidden; /* Prevent overflow issues */
+  overflow: hidden;
 }

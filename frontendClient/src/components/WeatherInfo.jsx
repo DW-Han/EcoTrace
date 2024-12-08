@@ -18,7 +18,7 @@ const WeatherInfo = () => {
           setRecommendation("The weather is bad. The windows are closed.");
         } else {
           setRecommendation(
-            "The weather is good. The windows and shades are open.",
+            "The weather is good. The windows and shades are opeßn.",
           );
         }
       } catch (error) {
@@ -31,7 +31,7 @@ const WeatherInfo = () => {
     fetchWeather();
   }, []);
 
-  // Helper to decode the weather code into human-readable text
+  // Helper to decode the weather code
   const getWeatherDescription = (code) => {
     const weatherDescriptions = {
       0: "Clear sky",
@@ -58,7 +58,7 @@ const WeatherInfo = () => {
 
   return (
     <div className="weather-container">
-      <h3>Weather Today</h3>
+      <h1>Today's Weather</h1>
       {weather ? (
         <>
           <p>

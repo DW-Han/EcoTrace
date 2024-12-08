@@ -37,14 +37,18 @@ const ReportGenerator = () => {
 
   return (
     <div className="report-generator-container">
-      <h1>Generate Reports</h1>
-      <button onClick={() => handleGenerateReport("Cost")}>Cost Report</button>
-      <button onClick={() => handleGenerateReport("Energy")}>
-        Energy Report
-      </button>
-      <button onClick={() => handleGenerateReport("Carbon")}>
-        Carbon Report
-      </button>
+      <h1 className="report-title">Generate Reports</h1>
+      <div className="report-buttons">
+        <button onClick={() => handleGenerateReport("Cost")}>
+          Cost Report
+        </button>
+        <button onClick={() => handleGenerateReport("Energy")}>
+          Energy Report
+        </button>
+        <button onClick={() => handleGenerateReport("Carbon")}>
+          Carbon Report
+        </button>
+      </div>
     </div>
   );
 };
