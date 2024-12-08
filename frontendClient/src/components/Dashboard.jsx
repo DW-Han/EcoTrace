@@ -10,7 +10,7 @@ const Dashboard = () => {
   return (
     <div className="dashboard-container">
       <header className="header">
-        <h1>Welcome back, Kenny</h1>
+        <h1>Welcome back, Facility Manager Kenny</h1>
       </header>
 
       <div className="main-content">
