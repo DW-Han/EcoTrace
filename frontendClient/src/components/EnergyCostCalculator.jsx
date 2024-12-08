@@ -11,25 +11,22 @@ const EnergyCostCalculator = ({ apiEndpoint }) => {
         const response = await fetch(apiEndpoint);
         const data = await response.json();
 
-        // Calculate start date for the last 4 months
         const today = new Date();
         const fourMonthsAgo = new Date();
         fourMonthsAgo.setMonth(today.getMonth() - 4);
 
-        // Filter data for the last 4 months
         const filteredData = data.filter((entry) => {
           const entryDate = new Date(entry.date);
           return entryDate >= fourMonthsAgo && entryDate <= today;
         });
 
-        // Calculate total cost
         const totalEnergyUsage = filteredData.reduce(
           (sum, entry) => sum + entry.energyUsage,
           0,
         );
         const cost = totalEnergyUsage * 0.5;
 
-        setTotalCost(cost.toFixed(2)); // Format to 2 decimal places
+        setTotalCost(cost.toFixed(2));
         setLoading(false);
       } catch (error) {
         console.error("Error fetching energy data:", error);

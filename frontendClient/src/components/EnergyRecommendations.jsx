@@ -21,9 +21,9 @@ const EnergyRecommendations = () => {
       setCurrentTipIndex(
         (prevIndex) => (prevIndex + 1) % recommendations.length,
       );
-    }, 5000); // Change tip every 5 seconds
+    }, 3000); 
 
-    return () => clearInterval(interval); // Cleanup on component unmount
+    return () => clearInterval(interval);
   }, []);
 
   return (

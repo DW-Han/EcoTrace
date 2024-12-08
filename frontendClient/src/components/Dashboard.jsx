@@ -3,19 +3,18 @@ import Summary from "./Summary";
 import EnergyCostCalculator from "./EnergyCostCalculator";
 import ReportGenerator from "./ReportGenerator";
 import EnergyRecommendations from "./EnergyRecommendations";
-import "./Dashboard.css"; // Custom CSS for layout
+import "./Dashboard.css"; 
 
 const Dashboard = () => {
   return (
     <div className="dashboard-container">
-      {/* Welcome Message */}
-      <header className="header">
+     <header className="header">
         <h1>Welcome back, Facility Manager Kenny</h1>
       </header>
 
-      {/* Main Content */}
+
       <div className="main-content">
-        {/* Left Section for Reports */}
+
         <div className="reports">
           <Summary
             apiEndpoint="/api/energy"
@@ -31,7 +30,7 @@ const Dashboard = () => {
           />
         </div>
 
-        {/* Right Section for Cost and Recommendations */}
+   
         <div className="right-container">
           <div className="total-cost">
             <EnergyCostCalculator apiEndpoint="/api/energy" />
