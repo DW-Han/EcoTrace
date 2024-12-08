@@ -13,6 +13,32 @@ Before starting the app, ensure the following are installed on your system:
 ### Installation and Dependencies
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone [https://github.com/your-username/your-repo-name.git](https://github.com/DW-Han/EcoTrace.git)
+cd EcoTrace
+```
+Install Dependencies on the client and server side
+
+```bash
+cd backend
+npm install
+```
+```bash
+cd frontendClient
+npm install
+```
+
+### Run the Application
+Make sure you have an .env file for the DB connections
+```.env
+DATABASE_URL=mongodb+srv://<username>:<password>@cluster0.ibiby.mongodb.net/?retryWrites=true&w=majority&appName=
+```
+Starting server
+```bash
+cd backend
+npm start
+```
+Starting client
+```bash
+cd frontendClient
+npm run dev
 ```
