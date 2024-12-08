@@ -42,3 +42,14 @@ Starting client
 cd frontendClient
 npm run dev
 ```
+
+### Play Around!
+
+Starting the server should populate your DB with a table of sample data if the table does not exist already. 
+You can see the:
+- Average Daily Energy Usage (kWh)
+- Average Daily Carbon Footprint (kg CO2)
+- Total cost for the last business quater
+- Automatic building management (opening/closing window) based on weather
+- Report generation
+- Tips on sustainability
