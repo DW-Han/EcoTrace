@@ -21,7 +21,7 @@ const EnergyRecommendations = () => {
       setCurrentTipIndex(
         (prevIndex) => (prevIndex + 1) % recommendations.length,
       );
-    }, 3000); 
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);

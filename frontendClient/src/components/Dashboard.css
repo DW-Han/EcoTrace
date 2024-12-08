@@ -100,3 +100,8 @@
   font-weight: bold;
   text-align: center;
 }
+.report-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

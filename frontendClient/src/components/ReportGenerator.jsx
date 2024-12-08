@@ -13,12 +13,12 @@ const ReportGenerator = () => {
       case "Energy":
         return [
           ["Date", "Energy Usage (kWh)"],
-          [date, "456.78"], 
+          [date, "456.78"],
         ];
       case "Carbon":
         return [
           ["Date", "Carbon Footprint (kg CO2)"],
-          [date, "78.90"], 
+          [date, "78.90"],
         ];
       default:
         return [];
