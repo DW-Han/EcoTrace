@@ -7,8 +7,8 @@ const generateRandomData = (startDate, endDate) => {
   while (currentDate <= endDate) {
     data.push({
       date: new Date(currentDate),
-      energyUsage: parseFloat((Math.random() * (50 - 10) + 10).toFixed(2)), // Random between 10 and 50 kWh
-      carbonFootprint: parseFloat((Math.random() * (30 - 5) + 5).toFixed(2)), // Random between 5 and 30 kg CO2
+      energyUsage: parseFloat((Math.random() * (50 - 10) + 10).toFixed(2)), // between 10 and 50 kWh
+      carbonFootprint: parseFloat((Math.random() * (30 - 5) + 5).toFixed(2)), // between 5 and 30 kg CO2
     });
     currentDate.setDate(currentDate.getDate() + 1);
   }
@@ -22,7 +22,7 @@ const populateData = async () => {
     const threeMonthsAgo = new Date();
     threeMonthsAgo.setMonth(today.getMonth() - 3);
 
-    // Check if data already exists for the last 3 months
+    // checking if data already exists
     const existingData = await EnergyData.find({
       date: { $gte: threeMonthsAgo, $lte: today },
     });
