@@ -10,6 +10,8 @@
   text-align: center;
   border-bottom: 1px solid #ddd;
   font-size: 24px;
+  font-size: 50px;
+
 }
 
 .main-content {
@@ -43,7 +45,7 @@
 .total-cost {
   text-align: center;
   font-size: 32px;
-  font-weight: bold;
+  /* font-weight: bold; */
   margin-bottom: 20px;
 }
 
@@ -60,7 +62,7 @@
 }
 
 .report-generator-container button:hover {
-  background-color: #0030d0;
+  background-color: #00d065;
 }
 
 .recommendations {
@@ -107,7 +109,7 @@
 .report-buttons button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #007bff;
+  background-color: #009107;
   color: white;
   border: none;
   border-radius: 5px;

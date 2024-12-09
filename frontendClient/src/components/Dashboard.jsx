@@ -10,7 +10,7 @@ const Dashboard = () => {
   return (
     <div className="dashboard-container">
       <header className="header">
-        <h1>Welcome back, Facility Manager Kenny</h1>
+        Welcome back, Facility Manager Kenny
       </header>
 
       <div className="main-content">
@@ -19,13 +19,13 @@ const Dashboard = () => {
             apiEndpoint="/api/energy"
             label="Average Daily Energy Usage (kWh)"
             dataKey="energyUsage"
-            color="blue"
+            color="cornflowerblue"
           />
           <Summary
             apiEndpoint="/api/energy"
             label="Average Daily Carbon Footprint (kg CO2)"
             dataKey="carbonFootprint"
-            color="green"
+            color="olive"
           />
         </div>
 

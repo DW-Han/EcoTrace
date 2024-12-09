@@ -42,12 +42,12 @@ const EnergyCostCalculator = ({ apiEndpoint }) => {
   if (error) return <p>{error}</p>;
 
   return (
-    <div className="energy-cost-calculator">
+    <div >
       <h3>Energy Usage Cost</h3>
-      <p>
+      
         Total cost for the last business quater:{" "}
         <strong style={{ color: "green" }}>${totalCost}</strong>
-      </p>
+      
     </div>
   );
 };
